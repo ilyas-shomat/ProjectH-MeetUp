@@ -3,18 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4239AA049346FAE12C90C217 /* Pods_ProjectH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2507ACA5EDE01020DB8079C /* Pods_ProjectH.framework */; };
 		FD10975F25F7477400C015BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD10975E25F7477400C015BF /* AppDelegate.swift */; };
-		FD10976125F7477400C015BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD10976025F7477400C015BF /* SceneDelegate.swift */; };
 		FD10976325F7477400C015BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD10976225F7477400C015BF /* ViewController.swift */; };
 		FD10976625F7477400C015BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD10976425F7477400C015BF /* Main.storyboard */; };
 		FD10976825F7477600C015BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD10976725F7477600C015BF /* Assets.xcassets */; };
 		FD10976B25F7477600C015BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD10976925F7477600C015BF /* LaunchScreen.storyboard */; };
+		FDF69A8325F79338006EBE68 /* ProjectAModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF69A8125F79338006EBE68 /* ProjectAModule.framework */; };
+		FDF69A8425F79338006EBE68 /* ProjectAModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FDF69A8125F79338006EBE68 /* ProjectAModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FDF69A8525F79338006EBE68 /* ProjectBModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF69A8225F79338006EBE68 /* ProjectBModule.framework */; };
+		FDF69A8625F79338006EBE68 /* ProjectBModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FDF69A8225F79338006EBE68 /* ProjectBModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FDF69A8725F79338006EBE68 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FDF69A8425F79338006EBE68 /* ProjectAModule.framework in Embed Frameworks */,
+				FDF69A8625F79338006EBE68 /* ProjectBModule.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6D5D28C840833B69DB15A07D /* Pods-ProjectH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectH.debug.xcconfig"; path = "Target Support Files/Pods-ProjectH/Pods-ProjectH.debug.xcconfig"; sourceTree = "<group>"; };
@@ -22,12 +40,13 @@
 		D2507ACA5EDE01020DB8079C /* Pods_ProjectH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD10975B25F7477400C015BF /* ProjectH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD10975E25F7477400C015BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD10976025F7477400C015BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FD10976225F7477400C015BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD10976525F7477400C015BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD10976725F7477600C015BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD10976A25F7477600C015BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD10976C25F7477600C015BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDF69A8125F79338006EBE68 /* ProjectAModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ProjectAModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF69A8225F79338006EBE68 /* ProjectBModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ProjectBModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDF69A8325F79338006EBE68 /* ProjectAModule.framework in Frameworks */,
+				FDF69A8525F79338006EBE68 /* ProjectBModule.framework in Frameworks */,
 				4239AA049346FAE12C90C217 /* Pods_ProjectH.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,6 +66,8 @@
 		74E1DD7ECA19247505C897F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FDF69A8125F79338006EBE68 /* ProjectAModule.framework */,
+				FDF69A8225F79338006EBE68 /* ProjectBModule.framework */,
 				D2507ACA5EDE01020DB8079C /* Pods_ProjectH.framework */,
 			);
 			name = Frameworks;
@@ -56,7 +79,6 @@
 				6D5D28C840833B69DB15A07D /* Pods-ProjectH.debug.xcconfig */,
 				72B2467C168FED9967A1C6A3 /* Pods-ProjectH.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -82,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				FD10975E25F7477400C015BF /* AppDelegate.swift */,
-				FD10976025F7477400C015BF /* SceneDelegate.swift */,
 				FD10976225F7477400C015BF /* ViewController.swift */,
 				FD10976425F7477400C015BF /* Main.storyboard */,
 				FD10976725F7477600C015BF /* Assets.xcassets */,
@@ -104,6 +125,7 @@
 				FD10975825F7477400C015BF /* Frameworks */,
 				FD10975925F7477400C015BF /* Resources */,
 				1C7CA3080AFE46E659731479 /* [CP] Embed Pods Frameworks */,
+				FDF69A8725F79338006EBE68 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,7 +230,6 @@
 			files = (
 				FD10976325F7477400C015BF /* ViewController.swift in Sources */,
 				FD10975F25F7477400C015BF /* AppDelegate.swift in Sources */,
-				FD10976125F7477400C015BF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -340,7 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -359,6 +380,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RH4ADBYDUN;
 				INFOPLIST_FILE = ProjectH/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,6 +401,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RH4ADBYDUN;
 				INFOPLIST_FILE = ProjectH/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
