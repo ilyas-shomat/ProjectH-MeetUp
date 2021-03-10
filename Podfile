@@ -9,3 +9,18 @@ target 'ProjectH' do
   pod 'RxSwift'
 
 end
+
+
+target "ProjectBModule" do
+  workspace 'ProjectH'
+  xcodeproj 'ProjectB-MeetUp/ProjectBModule/ProjectBModule'
+  inherit! :search_paths
+  pod 'RxSwift'
+end
+
+target "ProjectAModule" do
+  workspace 'ProjectH'
+  xcodeproj 'ProjectA-MeetUp/ProjectAModule/ProjectAModule'
+  inherit! :search_paths
+  pod 'RxSwift'
+end

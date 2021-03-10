@@ -20,13 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow()
         
         //MARK: - Setup Hybrid App
-//        setupHybridModule()
+        setupHybridModule()
         
         //MARK: - Setup Project A
         ProjectAModuleConnector.setupModule(appDelegate: self)
 
         //MARK: - Setup Project B
-//        ProjectBModuleConnector.setupModule(appDelegate: self)
+        ProjectBModuleConnector.setupModule(appDelegate: self)
         
         return true
     }
